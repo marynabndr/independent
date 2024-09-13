@@ -432,7 +432,343 @@ California, USA
         </li>
      </ul>
 
-     
+     <h2>HTML Зображення</h2>
+     <ul>
+        <li>
+            <h2>Italian Trulli</h2>
+            <img src="../images/pic_trulli.jpg" alt="Italian Trullti" style="width:100%">
+
+        </li>
+        <li>
+            <p>Тут ми вказуємо ширину та висоту зображення за допомогою атрибутів width та height (ширина та висота):</p>
+
+    <img src="../images/img_girl.jpg" alt="Дівчина в жакеті" width="500" height="600">
+
+        </li>
+        <li>
+            <p>Тут ми використовуємо атрибут style для визначення ширини та висоти зображення:</p>
+
+        <img src="../images/img_girl.jpg" alt="Дівчина в жакеті" style="width:500px;height:600px;">
+
+        </li>
+        <li>
+            <h2>Зображення в іншій папці</h2>
+        <p>Зазвичай зображення зберігаються у підпапці. Потім ви повинні включити ім’я папки в атрибут src:</p>
+
+        <img src="../images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+        </li>
+        <li>
+            <p>Якщо браузер не може знайти зображення, він буде відображати альтернативний текст:</p>
+
+            <img src="wrongname.html" alt="HTML5 Іконки" style="width:128px;height:128px;">
+
+        </li>
+        <li>
+            <h2>Зображення на іншому сервері</h2>
+
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools" style="width:104px;height:142px;">
+
+        </li>
+        
+        <li>
+            <h2>Анімовані зображення</h2>
+
+        <p>HTML дозволяє рухомі зображення:</p>
+
+        <img src="../images/programming.gif" alt="Computer man" style="width:48px;height:48px;">
+
+
+        </li>
+        <li>
+            <h2>Мапи зображення</h2>
+            <p>Клікніть на сонці або на одній із планет, щоб переглянути їх:</p>
+            
+            <img src="../images/planets.gif" alt="Планети" usemap="#planetmap" style="width:145px;height:126px;">
+            
+            <map name="planetmap">
+              <area shape="rect" coords="0,0,82,126" alt="Сонце" title="Сонце" href="sun.html">
+              <area shape="circle" coords="90,58,3" alt="Меркурій" title="Меркурій" href="mercur.html">
+              <area shape="circle" coords="124,58,8" alt="Венера" title="Венера" href="venus.html">
+            </map>
+        </li>
+        <li>
+            <h2>Плаваючі зображення</h2>
+            <p><strong>Розташувати зображення праворуч:</strong></p>
+
+            <p><img src="../images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            Параграф з плаваючим зображенням. Параграф з плаваючим зображенням. Параграф з плаваючим зображенням.</p>
+
+            <p><strong>Розташувати зображення ліворуч:</strong></p>
+            <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            Параграф з плаваючим зображенням. Параграф з плаваючим зображенням. Параграф з плаваючим зображенням.</p>
+
+        </li>
+       
+     </ul>
+
+     <h2>HTML Таблиці</h2>
+     <p>HTML таблиці починаються з тега <b>table</b>.</p>
+<p>Рядки таблиці починаються з тега <b>tr</b>.</p>
+<p>Чарунки з даними таблиці починаються з тега <b>td</b>.</p>
+
+<hr>
+<h2>1 стовпець:</h2>
+
+<table>
+  <tr>
+    <td>100</td>
+  </tr>
+</table>
+
+<hr>
+<h2>1 рядок та 3 стовпця:</h2>
+<table>
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+</table>
+
+<hr>
+<h2>3 рядка та 3 стовпця:</h2>
+<table>
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>500</td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>700</td>
+    <td>800</td>
+    <td>900</td>
+  </tr>
+</table>
+<hr>
+
+<h2>Таблиця з межами</h2>
+<p>Використовуйте CSS властивість border, щоб додати межу до таблиці.</p>
+
+<table style="width:100%" border="1">
+  <tr>
+    <th>Ім'я</th>
+    <th>Прізвище</th>
+    <th>Вік</th>
+  </tr>
+  <tr>
+    <td>Ілон</td>
+    <td>Маск</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>Володимир</td>
+    <td>Зеленський</td>
+    <td>43</td>
+  </tr>
+</table>
+<br>
+
+<table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  
+    <h2>Вирівняти заголовки по лівому краю</h2>
+    <p>Щоб вирівняти заголовки таблиці по лівому краю, використовуйте CSS властивість text-align.</p>
+    
+   <h2>HTML Списки</h2>
+   <h2>Невпорядкований список HTML</h2>
+
+   <ul>
+     <li>Кава</li>
+     <li>Чай</li>
+     <li>Молоко</li>
+   </ul>
+
+   <h2>Невпорядкований список з дисковими маркерами</h2>
+
+<ul style="list-style-type:disc;">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ul>
+<h2>Невпорядкований список з круглими маркерами</h2>
+
+<ul style="list-style-type:circle;">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ul>
+
+<h2>Невпорядкований список з квадратними маркерами</h2>
+
+<ul style="list-style-type:square;">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ul>
+<h2>Невпорядкований список з квадратними маркерами</h2>
+
+<ul style="list-style-type:square;">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ul>
+<h2>Впорядкований список HTML</h2>
+
+<ol>
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+<h2>Впорядкований список з цифрами</h2>
+
+<ol type="1">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+
+<h2>Впорядкований список із заглавними літерами</h2>
+
+<ol type="A">
+  <li>Уроки HTML</li>
+  <li>Уроки CSS</li>
+  <li>Уроки JavaScript</li>
+</ol>
+
+<h2>Впорядкований список з рядковими літерами</h2>
+
+<ol type="a">
+  <li>Уроки JavaScript</li>
+  <li>Уроки PHP</li>
+  <li>Уроки Python</li>
+</ol>
+
+<h2>Впорядкований список з римськими цифрами</h2>
+
+<ol type="I">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+
+<h2>Впорядкований список з рядковими римськими цифрами</h2>
+
+<ol type="i">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+
+<h2>Впорядкований список з рядковими римськими цифрами</h2>
+
+<ol type="i">
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+
+<h2>Список опису</h2>
+
+<dl>
+  <dt>Кава</dt>
+  <dd>- чорний горячий напій</dd>
+  <dt>Молоко</dt>
+  <dd>- білий холодний напій</dd>
+</dl>
+
+<h2>Вкладений список</h2>
+
+<ul>
+  <li>Кава</li>
+  <li>Чай
+    <ul>
+    <li>Чорний чай</li>
+    <li>Зелений чай
+      <ul>
+      <li>Китай</li>
+      <li>Африка</li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>Молоко</li>
+</ul>
+
+<h2>Вкладений список</h2>
+
+<ul>
+  <li>Кава</li>
+  <li>Чай
+    <ul>
+    <li>Чорний чай</li>
+    <li>Зелений чай
+      <ul>
+      <li>Китай</li>
+      <li>Африка</li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>Молоко</li>
+</ul>
+
+<style>
+    ul#menu li {
+      display:inline;
+    }
+    </style>
+
+<h2>Горизонтальний список</h2>
+
+<ul id="menu">
+  <li>Уроки HTML /</li>
+  <li>Уроки CSS /</li>
+  <li>Уроки JavaScript /</li>
+  <li>Уроки PHP /</li>
+</ul>
+
+<h2>HTML Блочні та рядкові елементи</h2>
+<div style="background-color:black; color:white; padding:20px;">
+    <h2>Лондон</h2>
+    <p>Лондон є столицею Англії. Це найбільш густонаселене місто в Сполученному Королівстві, з населенням більше 13 мільйонів осіб.</p>
+    <p>Стоячи на речці Темзі, Лондон був великим поселенням на протязі двох тисячоліть, його історія походить до його заснуванню римлянами, котрі назвали його Londinium.</p>
+  </div>
+
+  <h1>Мій <span style="color:red">важливий</span> заголовок</h1>
+  
+
+
+
+
+
+
 
 </body>
 </html>
