@@ -7,7 +7,17 @@
   <link rel="icon" type="image/x-icon" href="./images/лампочка.png">
 </head>
 <body>
-  <h1>САМОСТІЙНА РОБОТА №1</h1>
+  <header>
+    <nav>
+      <a href="#Ind1">Перейти до самостійної роботи №1</a>
+      <br>
+      <a href="#Ind2">Перейти до самостійної роботи №2</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <div id="work1">
+  <h1 id="Ind1">САМОСТІЙНА РОБОТА №1</h1>
   <h2>1.1.	Що таке HTML?  </h2>
   <h1>Мій перший заголовок</h1>
   <p>Мій перший параграф.</p>
@@ -918,8 +928,111 @@
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Відправити">
   </form>
+</div>
 
-  
+<div id="work2">
+  <h1 id="Ind2">САМОСТІЙНА РОБОТА №2</h1>
+  <h2>1.1. CSS Синтаксис</h2>
+  <p class="section-1-1">Це абзац з класом, який буде стилізовано.</p>
+  <style>
+    .section-1-1 {
+      color: red;
+      text-align: center;
+    }
+  </style>
 
+<h2>1.2.	CSS Селектори</h2>
+<p id="para1">Наведене нижче правило CSS буде застосовано до елементу HTML з id="para1":</p>
+  <style>
+    #para1 {
+      color: red;
+      text-align: center;
+    }
+  </style>
+
+  <p >В цьому прикладі всі HTML елементи з class="center" будуть червоними та вирівняні по центру:</p>
+  <style>
+    .center {
+      text-align: center;
+      color: red;
+    }
+
+  </style>
+
+  <h1 class="center">Червоний заголовок по центру</h1>
+  <p class="center">Червоний параграф з вирівнюванням по центру.</p>
+
+<h2>1.3.	CSS Кольори (RGB, HEX, HSL).</h2>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+<h2>1.4.	CSS Фони</h2>
+
+<h1 class="section-1-4-1" >CSS background-color приклад!</h1>
+<div class="section-1-1-2" >
+Цей текст всередині елемента div.
+<p class="section-1-1-3">Цей параграф має власний колір фону</p>
+Ми все ще знаходимось в елементі div.
+</div>
+
+<style >
+  .section-1-4-1 {
+  background-color: green;
+}
+.section-1-4-2 {
+  background-color: lightblue;
+}
+.section-1-1-3 {
+  background-color: yellow;
+}
+</style>
+
+<h2>1.5.	CSS Межі</h2>
+<style>
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+  </style>
+<p class="dotted">Точкова рамка.</p>
+<p class="dashed">Пунктирна рамка.</p>
+<p class="solid">Суцільна рамка.</p>
+<p class="double">Подвійна рамка.</p>
+<p class="groove">Гравірована рамка.</p>
+<p class="ridge">Рельєфна рамка.</p>
+<p class="inset">Вдавлена рамка.</p>
+<p class="outset">Опукла рамка.</p>
+<p class="none">Без рамки.</p>
+<p class="hidden">Прихована рамка.</p>
+<p class="mix">Змішана рамка.</p>
+
+
+<h2>1.6.	CSS  Поля </h2>
+
+
+<h2>1.8.	CSS Padding - Внутрішній відступ </h2>
+<h2>1.9.	CSS Висота, ширина і максимальна ширина   </h2>
+<h2>1.10.	CSS Блочна модель. </h2>
+<h2>1.11.	CSS Іконки. </h2>
+<h2>1.12.	CSS Посилання. </h2>
+<h2>1.13.	CSS Списки. </h2>
+<h2>1.14.	CSS Таблиці.Межі </h2>
+
+
+</div>
+</main>
 </body>
 </html>
